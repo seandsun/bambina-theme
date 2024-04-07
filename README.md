@@ -1,1 +1,4 @@
-# tema: bambina by marisol henao
+# Tema: bambina by marisol henao
+---
+
+![tema en terminal bash](theme.png)
