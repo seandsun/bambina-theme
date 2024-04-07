@@ -1,0 +1,87 @@
+{
+  "palette": {
+    "purple": "#6549F3",
+    "green": "#5AF78E",
+    "pink":"#FF70A6",
+    "charging_b": "#FF70A6",
+    "discharging_b": "#FF70A6",
+    "full_b": "#5AF78E"
+  },
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "p:purple",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "plain",
+          "template": "<p:green><b>\u237e </b></> <b><p:green>{</> {{ .Path }} <p:green> = </> </b>",
+          "type": "path"
+        },        
+        {
+          "foreground": "#9B6BDF",
+          "foreground_templates": [
+            "{{if eq \"Charging\" .State.String}}p:charging_b{{end}}",
+            "{{if eq \"Discharging\" .State.String}}p:discharging_b{{end}}",
+            "{{if eq \"Full\" .State.String}}p:full_b{{end}}"
+          ],
+          "leading_diamond": " \ue0b6",
+          "properties": {
+            "charged_icon": "\u25c3 ",
+            "charging_icon": "\u02c4 ",
+            "discharging_icon": "\u02c5 "
+          },
+          "style": "plain",
+          "template": "<b><p:purple>( </>{{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}<p:purple> )</></b>",
+          "trailing_diamond": "\ue0b4",
+          "type": "battery"
+        },
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "p:green",
+          "template": "<p:green><b>  =>  </b></><b>{{ .HEAD }}<p:purple>\u003b</></b>",
+          "properties": {
+            "fetch_status": true,
+            "branch_icon": "<p:green>λ </>"
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "p:green",
+          "style": "plain",
+          "template": "<b> }</b>",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "p:green",
+          "style": "plain",
+          "template": "<p:green>\u2514</><b> {{ .UserName }}()<p:purple>\u003b</></b>",
+          "type": "session"
+        },
+        {
+          "foreground": "p:pink",
+          "style": "plain",
+          "template": "<b> $ </b>",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "version": 2
+}
