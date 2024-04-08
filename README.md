@@ -1,4 +1,4 @@
-# Tema: bambina
+# Tema: bambina :shipit:
 ---
 
 ![tema en terminal bash](theme.png)
@@ -7,7 +7,7 @@ Este tema está basado en `Oh My Posh`. El cual, básicamente lo que hace es per
 
 - Repo de **[github](https://github.com/JanDeDobbeleer/oh-my-posh) - JanDeDobbeleer**
 
-## Instalación de Oh My Posh
+## Instalación de Oh My Posh :art:
 
 Para realizar la instalación, tengo 2 recomendaciones:
 
@@ -22,18 +22,18 @@ Por defecto en el archivo `.bashrc` la configuración es:
 ```
 eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/lambda.omp.json)" 
 ```
-Cambiar `lamda.omp.json` por el nombre del tema que guste, por ejemplo `xxx.omp.json`
+Cambiar el tema `lamda.omp.json` por el nombre del tema que te guste, por ejemplo `xxx.omp.json`
 
 
-## Tema personalizado
+## Tema personalizado :construction:
 
 
-Luego, en una carpeta distinta llamada `Dev` cree el tema personalizado llamado bambina.json, el cual está inspirado en una **función flecha** de **javascript**; y por último, en el archivo `.bashrc` modifiqué la configuración así:
+Para crear un tema personalizado, lo ideal es hacerlo en una carpeta diferente, por ejemplo, yo en una carpeta distinta llamada `Dev` creé el tema personalizado llamado bambina.json, el cual está inspirado en una **función flecha** de **javascript**; luego, en el archivo `.bashrc` modifiqué la configuración así:
 
 ```
 eval "$(oh-my-posh init bash --config ~/Dev/oh-my-posh/bambina.json)" 
 ```
 
-De esa manera le tema que he creado a mi gusto ya estaría siendo aplicado.
+:white_check_mark: De esa manera le tema que he creado a mi gusto ya estaría siendo aplicado. 
 
 > by marisol henao
