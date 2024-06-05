@@ -34,6 +34,12 @@ Para crear un tema personalizado, lo ideal es hacerlo en una carpeta diferente, 
 eval "$(oh-my-posh init bash --config ~/Dev/oh-my-posh/bambina.json)" 
 ```
 
-:white_check_mark: De esa manera le tema que he creado a mi gusto ya estaría siendo aplicado. 
+:white_check_mark: De esa manera el tema que he creado a mi gusto ya estaría siendo aplicado.
+
+# Tema: ss :shipit:
+---
+Este tema una variante del tema `bambina`.
+
+![tema en terminal bash](theme1.png)
 
 > by marisol henao
