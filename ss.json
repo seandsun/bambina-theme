@@ -1,0 +1,50 @@
+{
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#6549F3",
+          "properties": {
+            "style": "full"
+          },
+          "style": "plain",
+          "template": "<b>{{ .Path }}</b>",
+          "type": "path"
+        },        
+        {
+          "type": "git",
+          "style": "plain",
+          "foreground": "#5AF78E",
+          "template": "<b> λ git(<#6549F3>{{ .HEAD }}</>)<#6549F3>\u003b</></b>",
+          "properties": {
+            "fetch_status": true,
+            "branch_icon": ""
+          }
+        }
+      ]
+    },
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#5AF78E",
+          "style": "plain",
+          "template": "<b>ss()<#6549F3>\u003b</></b>",
+          "type": "text"
+        },
+        {
+          "foreground": "#FF70A6",
+          "style": "plain",
+          "template": "<b> $</b>",
+          "type": "text"
+        }
+      ]
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
